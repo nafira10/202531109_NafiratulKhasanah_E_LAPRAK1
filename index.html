@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laprak 1 Lab Multi - Beranda</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col justify-between selection:bg-indigo-500 selection:text-white">
+
+    <div>
+        <main class="max-w-4xl w-full mx-auto p-6 md:p-10 my-6 bg-white rounded-2xl shadow-sm border border-slate-200 space-y-6">
+            
+            <header class="border-b border-slate-100 pb-6">
+                <h1 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">
+                    Laporan Praktikum Laboratorium Multimedia
+                </h1>
+            </header>
+
+            <nav class="bg-slate-50 p-3 rounded-xl border border-slate-200 text-center font-semibold text-slate-700 space-x-3 text-sm md:text-base">
+                <a href="index.html" class="text-indigo-600 hover:underline">Beranda</a>
+                <span class="text-slate-400">|</span>
+                <a href="pendaftaran.html" class="hover:text-indigo-600 transition-colors">Pendaftaran</a>
+                <span class="text-slate-400">|</span>
+                <a href="https://itpln.ac.id" target="ITPLN_WEB" class="hover:text-indigo-600 transition-colors inline-flex items-center gap-1">
+                    Web ITPLN <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                </a>
+            </nav>
+
+            <hr class="border-slate-200 my-6">
+
+            
+            <div class="space-y-10">
+                
+                <article class="space-y-4">
+                    <h2 class="text-2xl font-bold text-slate-900 flex items-center gap-2">
+                        <span class="w-2 h-6 bg-indigo-600 rounded-full"></span>
+                        Selamat Datang Di Laboratorium Multimedia
+                    </h2>
+
+                    <div class="flex flex-col sm:flex-row items-center gap-6 bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                        <img src="Asset/LOGO_LABORATORIUM_MULTIMEDIA_NEW.jpg" alt="Logo Lab" width="120" class="rounded-xl shadow-sm bg-white p-2 border border-slate-200 object-contain" onerror="this.src='https://placehold.co/120x120/4f46e5/ffffff?text=Logo+Lab'">
+                        
+                        <p class="text-slate-600 leading-relaxed text-base">
+                            Kegiatan <strong class="font-bold text-slate-900">praktikum mahasiswa</strong> merupakan sarana penting untuk mengasah skill teknis. <em class="italic text-slate-700">Harap menjaga kebersihan!</em> <del class="line-through text-slate-400">Dilarang makan</del> serta <ins class="underline decoration-indigo-500 underline-offset-4 font-medium text-slate-900">Dilarang membawa makanan dan minuman</ins> di dalam ruang laboratorium komputer demi kenyamanan bersama.
+                        </p>
+                    </div>
+                </article>
+
+               
+                
+                <article class="space-y-6">
+                    <h2 class="text-2xl font-bold text-slate-900 flex items-center gap-2">
+                        <span class="w-2 h-6 bg-indigo-600 rounded-full"></span>
+                        Media Informasi
+                    </h2>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200 space-y-3">
+                            <h3 class="text-lg font-semibold text-slate-800">Video Profil</h3>
+                            <div class="overflow-hidden rounded-xl shadow-inner bg-black flex justify-center">
+                                <video width="320" height="240" controls class="w-full max-w-[320px] h-[240px] object-cover">
+                                    <source src="Asset/Screen Recording 2026-10-11 185047.mp4" type="video/mp4">
+                                    Browser Anda tidak mendukung tag video.
+                                </video>
+                            </div>
+                            <p class="text-xs text-slate-500 italic">Rekaman penjelasan struktur kode HTML laporan praktikum.</p>
+                        </div>
+
+                        <!-- Audio -->
+                        <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200 space-y-3 flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-lg font-semibold text-slate-800">Audio</h3>
+                                <p class="text-sm text-slate-500 mt-1">“Sunroof - Nicky Youre, Dazy”</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm my-auto">
+                                <audio controls class="w-full">
+                                    <source src="Asset/Nicky Youre, dazy - Sunroof (Official Music Video).mp3" type="Audio/mpeg">
+                                    Browser Anda tidak mendukung tag audio.
+                                </audio>
+                            </div>
+                            <p class="text-xs text-slate-400">Audio pemutar internal/eksternal multimedia.</p>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <aside class="bg-amber-50 border border-amber-200 rounded-2xl p-6 space-y-2">
+                <h3 class="text-lg font-bold text-amber-900 flex items-center gap-2">
+                    <i class="fa-solid fa-triangle-exclamation text-amber-600"></i> Pengumuman
+                </h3>
+                <p class="text-amber-800 text-sm leading-relaxed">
+                    Praktikan wajib menggunakan Almamater saat praktikum berlangsung, dan menaati seluruh peraturan Laboratorium.
+                </p>
+            </aside>
+
+        </main>
+    </div>
+
+    <footer class="bg-white border-t border-slate-200 text-center text-sm text-slate-500 py-6 mt-6">
+        &copy; 2026 Nafiratul Khasanah_202531109
+    </footer>
+
+</body>
+</html>
